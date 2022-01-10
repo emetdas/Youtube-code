@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back To Top</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Section 1</h1>
+    </section>
+    <section>
+      <h1>Section 2</h1>
+    </section>
+    <section>
+      <h1>Section 3</h1>
+    </section>
+    <section>
+      <h1>Section 4</h1>
+    </section>
+    <div class="back_to_top">
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      let back_to_top = document.querySelector('.back_to_top');
+      window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+          back_to_top.classList.add('show');
+        } else {
+          back_to_top.classList.remove('show');
+        }
+      });
+      back_to_top.addEventListener('click', function (e) {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth',
+        });
+      });
+    </script>
+  </body>
+</html>
