@@ -2,9 +2,11 @@
 
 ![light&dark mode](code.png)
 
-[▶ video link](https://link)
+[▶ video link](https://youtu.be/yS_TcLIRdds)
 
 # code Snippets
+
+----------
 
 ## HTML5 
 ```html
