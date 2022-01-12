@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root {
+  --nav-height: 6rem;
+  --primary: #3e54cf;
+  --white: #fff;
+  transition: background 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+html.dark {
+  --nav-height: 6rem;
+  --primary: #050d30;
+  --white: #fff;
+  transition: background 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+html.light {
+  --nav-height: 6rem;
+  --primary: #7066fd;
+  --white: #fff;
+  transition: background 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+    color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  background: var(--primary);
+}
+a,
+p {
+  font-size: 1.8rem;
+}
+#hero {
+  height: 100vh;
+  background: var(--primary);
+}
+.container {
+  max-width: 114rem;
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+header {
+  background: var(--primary);
+  box-shadow: 0 0 0.2rem var(--white);
+}
+nav {
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo .logo-img {
+  width: 8rem;
+  height: 5rem;
+  object-fit: cover;
+}
+.nav_list {
+  display: inline-block;
+  margin-left: 3rem;
+}
+.nav_link {
+  color: var(--white);
+}
+.theme-icon {
+  cursor: pointer;
+}
+ion-icon {
+  font-size: 1.6rem;
+}
+.theme-icon ion-icon {
+  font-size: 2.5rem;
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+}
+.hero-content-container {
+  height: calc(100vh - var(--nav-height));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+.heading {
+  color: var(--white);
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+.paragraph {
+  color: var(--white);
+}
+.btn-primary {
+  margin-top: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 1.8rem;
+  display: inline-block;
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: 0 0 0.1rem var(--white);
+}
+.btn-primary ion-icon {
+  margin-bottom: -0.4rem;
+}
