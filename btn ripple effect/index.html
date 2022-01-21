@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Btn Ripple effect</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">Click Me</button>
+    </div>
+    <script>
+      let btn = document.querySelector('.btn');
+      btn.addEventListener('click', function (e) {
+        const x = e.clientX - e.target.offsetLeft;
+        const y = e.clientY - e.target.offsetTop;
+        const Ripple = document.createElement('span');
+        Ripple.classList.add('ripple');
+        Ripple.style.left = x + 'px';
+        Ripple.style.top = y + 'px';
+        btn.appendChild(Ripple);
+        setTimeout(() => Ripple.remove(), 1000);
+      });
+    </script>
+  </body>
+</html>
