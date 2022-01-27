@@ -1,0 +1,57 @@
+```html
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+``
+Web design means creating websites with user-friendly structure
+and with aesthetic approach. A web designer always thinks about
+the layout, color scheme and unique design of a website
+``
+
+``
+Web Development consists of two segments front end development
+and backend development. Front-end Developers work with visual
+designs of a website and build the sites with using of code
+``
+
+``
+This course UX & UI Design is designed for those people, who
+wants to design anything to keep users on first priority and
+working on to make them happy.
+``
+
+``
+With the world going mobile, the importance of apps is
+increasing by the day. App development hence refers to the
+creation of applications to be used on mobile devices.
+``
+```
+
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+:root {
+  --container: 120rem;
+  --primary: hsl(201.43, 13.21%, 58.43%);
+  --white: hsl(0, 0%, 100%);
+  --white-light: hsl(0, 0%, 99%);
+  --box-shadow: hsl(220, 7.32%, 91.96%);
+}
+font-family: 'Rubik', sans-serif;
+```
+
