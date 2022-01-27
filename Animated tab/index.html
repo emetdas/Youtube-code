@@ -9,49 +9,110 @@
   </head>
   <body>
     <div class="container">
+      <header>
+        <h1 class="section-heading">Our Courses</h1>
+      </header>
+    </div>
+    <div class="container">
       <div class="tab-container">
         <div class="tab-filter-container">
-          <li class="filter-btn active" data-tab="one">One</li>
-          <li class="filter-btn" data-tab="two">Two</li>
-          <li class="filter-btn" data-tab="three">Three</li>
-          <li class="filter-btn" data-tab="four">Four</li>
+          <li class="filter-btn active" data-tab="web-design">
+            <ion-icon name="desktop-outline"></ion-icon>
+            Web Design
+          </li>
+          <li class="filter-btn" data-tab="web-development">
+            <ion-icon name="logo-nodejs"></ion-icon>
+            Web Development
+          </li>
+          <li class="filter-btn" data-tab="ux-design">
+            <ion-icon name="diamond-outline"></ion-icon>
+            UI UX Design
+          </li>
+          <li class="filter-btn" data-tab="app-development">
+            <ion-icon name="logo-google-playstore"></ion-icon>
+            App Development
+          </li>
         </div>
         <div class="tab-filter-item-container">
-          <div class="tab-item one select_tab">
-            <h1 class="tab-heading">Heading 1</h1>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, incidunt.
-            </p>
-            <a href="#!" class="btn-primary">Data</a>
+          <div class="tab-item web-design select_tab">
+            <div class="tab-content-left">
+              <img
+                src="images/web design.jpg"
+                alt="web design"
+                class="tab-img"
+              />
+            </div>
+            <div class="tab-content-right">
+              <h1 class="tab-heading">Responsive Web Design</h1>
+              <p class="paragraph">
+                Web design means creating websites with user-friendly structure
+                and with aesthetic approach. A web designer always thinks about
+                the layout, color scheme and unique design of a website
+              </p>
+              <a href="#!" class="btn-primary">Read More</a>
+            </div>
           </div>
-          <div class="tab-item two">
-            <h1 class="tab-heading">Heading 2</h1>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, incidunt.
-            </p>
-            <a href="#!" class="btn-primary">Data</a>
+          <div class="tab-item web-development">
+            <div class="tab-content-left">
+              <h1 class="tab-heading">Web Development</h1>
+              <p class="paragraph">
+                Web Development consists of two segments front end development
+                and backend development. Front-end Developers work with visual
+                designs of a website and build the sites with using of code
+              </p>
+              <a href="#!" class="btn-primary">Read More</a>
+            </div>
+            <div class="tab-content-right">
+              <img
+                src="images/web-development.jpg"
+                alt="web development"
+                class="tab-img"
+              />
+            </div>
           </div>
-          <div class="tab-item three">
-            <h1 class="tab-heading">Heading 3</h1>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, incidunt.
-            </p>
-            <a href="#!" class="btn-primary">Data</a>
+          <div class="tab-item ux-design">
+            <div class="tab-content-left">
+              <img src="images/ux-ui.jpg" alt="UI/UX Design" class="tab-img" />
+            </div>
+            <div class="tab-content-right">
+              <h1 class="tab-heading">UI UX Design</h1>
+              <p class="paragraph">
+                This course UX & UI Design is designed for those people, who
+                wants to design anything to keep users on first priority and
+                working on to make them happy.
+              </p>
+              <a href="#!" class="btn-primary">Read More</a>
+            </div>
           </div>
-          <div class="tab-item four">
-            <h1 class="tab-heading">Heading 4</h1>
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, incidunt.
-            </p>
-            <a href="#!" class="btn-primary">Data</a>
+          <div class="tab-item app-development">
+            <div class="tab-content-left">
+              <h1 class="tab-heading">App Development</h1>
+              <p class="paragraph">
+                With the world going mobile, the importance of apps is
+                increasing by the day. App development hence refers to the
+                creation of applications to be used on mobile devices.
+              </p>
+              <a href="#!" class="btn-primary">Read More</a>
+            </div>
+            <div class="tab-content-right">
+              <img
+                src="images/app development.png"
+                alt="UI/UX Design"
+                class="tab-img"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
