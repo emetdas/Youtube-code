@@ -2,7 +2,7 @@
 
 ![portfolio](first-look.png)
 
-[⏯ watch video](https://link)
+[⏯ watch video](https://www.youtube.com/watch?v=0u01PqgmGs8&ab_channel=Cods)
 
 # Code Snippets
 
