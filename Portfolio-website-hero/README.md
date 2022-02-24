@@ -1,6 +1,6 @@
 # Response Portfolio Website Design | Javascript
 
-![portfolio]()
+![portfolio](first-look.png)
 
 [⏯ watch video](https://link)
 
