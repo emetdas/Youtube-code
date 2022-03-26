@@ -1,4 +1,4 @@
-# Project Filter | HTML5 CSS3 Javascript
+# Portfolio Filter | HTML5 CSS3 Javascript
 
 ![project-filter](project-filter.png)
 
