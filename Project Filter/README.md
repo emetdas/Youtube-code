@@ -17,7 +17,7 @@
     <title>Project Filter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body> 
+  <body>
     <div class="container">
       <div class="filter-menu">
         <li class="filter-btn active" data-project="all">All</li>
