@@ -108,7 +108,7 @@ body {
   max-width: var(--container);
   margin: var(--m-auto);
   padding: 0 1rem;
-} 
+}
 .filter-project-items {
   padding: 1rem 0 3rem 0;
 }
