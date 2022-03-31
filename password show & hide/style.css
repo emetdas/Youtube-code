@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #5d46e2;
+}
+.input-group {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  transform: translate(-50%, -50%);
+  padding: 0 0 0 0.5rem;
+  justify-content: space-between;
+  box-shadow: 0 0 0.5rem #aea3f1;
+}
+.input-group input {
+  width: 100%;
+  outline: none;
+  padding: 0.5rem 0.3rem 0.5rem 0;
+  border: none;
+}
+.input-group ion-icon {
+  background: #382a88;
+  cursor: pointer;
+  font-size: 1.6rem;
+  padding: 0.2rem 0.5rem;
+  color: #fff;
+  --ionicon-stroke-width: 35px;
+}
