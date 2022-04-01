@@ -1,8 +1,8 @@
 # Password Show & Hide | Javascript
 
-![thumbnail]()
+![thumbnail](thumbnail.png)
 
-[password show hide hide]()
+[watch on youtube](https://youtu.be/K6U_rZkOa00)
 
 # Code Snippets
 
