@@ -1,6 +1,6 @@
 # Product Image Gallery Using HTML CSS & Javascirpt
 
-![thumbnail](https://link)
+![thumbnail](thumbnail.png)
 
 [Watch On Youtube](https://link)
 
