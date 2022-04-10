@@ -2,7 +2,7 @@
 
 ![sass-setup](thumbnail.png)
 
-[Watch On Youtube]()
+[Watch On Youtube](https://youtu.be/K7zmx_kwtX0)
 
 ## setup Snippet
 
