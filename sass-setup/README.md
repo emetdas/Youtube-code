@@ -16,6 +16,7 @@ npm i -g sass
 ```
 
 > package.json
+
 ```json
   "scripts": {
     "sass": "sass --no-source-map --watch sass/style.scss css/style.css",
