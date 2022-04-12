@@ -1,6 +1,6 @@
 # Custom Select Option | Javascript
 
-![thumbnail]()
+![thumbnail](thumbnail.png)
 
 [Watch On Youtube]()
 
