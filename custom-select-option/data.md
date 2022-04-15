@@ -40,5 +40,6 @@
     font-family: 'Rubik', sans-serif;
     background: var(--primary);
     }
+    
 ```
 https://restcountries.com/v3.1/all
