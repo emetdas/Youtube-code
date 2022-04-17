@@ -1,0 +1,144 @@
+.wrapper {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    overflow-y: scroll;
+    @include wh(15rem, 100%);
+    background: $sidebar-bg;
+    @include br(0 3rem 3rem 0);
+    @include p(0 0 2rem 0);
+    box-shadow: 0 0.1rem 1rem $sidebar-active-bg;
+    &::-webkit-scrollbar {
+      @include w(0);
+    }
+    & .profile {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 0.5rem;
+      @include p(1rem 0);
+      & .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        & img {
+          @include wh(2rem, auto);
+          object-fit: cover;
+        }
+        & .logo-txt {
+          color: $white;
+          font-weight: bold;
+          font-size: 1.7rem;
+        }
+      }
+      & .profile-img {
+        @include wh(8rem, 5rem);
+        object-fit: contain;
+      }
+    }
+
+    & .menu {
+      .list {
+        @include p(0.4rem 1.5rem);
+        @include m(1rem 0);
+        position: relative;
+        transition: $transition;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          @include wh(0.2rem, 100%);
+          background: $border;
+          @include br(0.2rem);
+          opacity: 0;
+          transition: $transition;
+          pointer-events: none;
+        }
+        &:hover::before,
+        &.active::before {
+          opacity: 1;
+          transition: $transition;
+        }
+        & .link,
+        & .settings {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          color: $white;
+        }
+      }
+    }
+    & .create-teams {
+      @include w(90%);
+      @include m(0 auto);
+      @include account-bg;
+      @include br(1rem);
+      @include p(1rem);
+      box-shadow: 0 0 1rem $bg;
+      position: relative;
+      & .icon-dot {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+    }
+  }
+  & .content {
+    margin-left: 15rem;
+    @include w(calc(100% - 15rem));
+  }
+  // Responsive
+  @media (max-width: 628px) {
+    .sidebar {
+      overflow-x: hidden;
+      @include br(0 1rem 1rem 0);
+      @include w(4rem);
+      & .logo-txt {
+        display: none;
+      }
+      & .list {
+        @include m(0.5rem 0 !important);
+        @include p(0.5rem 0 !important);
+        &.active::before {
+          opacity: 1;
+          transform: scale(1);
+        }
+        &::before {
+          opacity: 0;
+          transform: scale(0);
+          @include wh(2.7rem !important, 80% !important);
+          top: 0.3rem !important;
+          left: 0.5rem !important;
+          @include br(1rem !important);
+          z-index: -1 !important;
+          background: #5f5fa75e !important;
+          @include link-active;
+        }
+        & .link,
+        & .settings {
+          & img {
+            @include p(0.5rem 1rem);
+          }
+        }
+      }
+      & .profile {
+        gap: 1rem;
+      }
+      & .profile-img {
+        @include wh(2.5rem !important, 2.5rem !important);
+      }
+      & .profile-content {
+        display: none;
+      }
+      & .create-teams {
+        display: none;
+      }
+    }
+    & .content {
+      margin-left: 4rem;
+      @include w(calc(100% - 4rem));
+    }
+  }
+}

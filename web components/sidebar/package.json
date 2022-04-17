@@ -1,0 +1,13 @@
+{
+  "name": "sidebar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --no-source-map --watch sass/style.scss css/style.css",
+    "sass:compress": "sass --no-source-map --watch sass/style.scss css/compress.css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
