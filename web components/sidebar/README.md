@@ -1,6 +1,6 @@
 # Responsive Sidebar | (HTML SASS & Javascript)
 ![thumbnail](thumbnail.png)
-[Watch on Youtube]()
+[Watch on Youtube](https://youtu.be/uqKCmw4rtXw)
 
 # Code Snippets
 
