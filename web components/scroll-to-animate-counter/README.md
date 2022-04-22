@@ -1,6 +1,6 @@
 # Responsive Counter up Animation on Scroll using HTML CSS & Javascript
 ![Thumbnail](thumbnail.png)
-[Watch On Youtube](https://link)
+[Watch On Youtube](https://youtu.be/WroydnXVtLo)
 
 ## Code Snippets
 ----------
