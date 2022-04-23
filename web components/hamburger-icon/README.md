@@ -2,7 +2,7 @@
 
 ![thumbnail](thumbnail.png)
 
-[Watch On Youtube](https://link)
+[Watch On Youtube](https://youtu.be/0BP0k0mmdYo)
 
 ## Code Snippets
 ----------
