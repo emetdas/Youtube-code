@@ -1,17 +1,17 @@
 # Light and Dark Theme Toggle Using HTML CSS & JavaScript
 ![thumbnail](thumbnail.png)
 [Watch On Youtube]()
-# Needed Code
+# Starter Code
 ## Web font
 ```html
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+<script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
 ```
 ## CSS Reset
 ```css
