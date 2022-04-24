@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+:root {
+  --white: #fff;
+  --bg: #130e2d;
+  --light: #382a88;
+  --dark: #1c1544;
+  --light-icon: #7d6be8;
+  --text-sunny: #f2f27a;
+  --dark-icon: #2f2371;
+  --transition: all 0.5s cubic-bezier(0.27, 0.74, 0.65, 0.68);
+  --light-box-shadow: inset -0.1rem -0.1rem 0.2rem 0.1rem var(--light-icon),
+    inset 0.1rem 0.1rem 0.2rem 0.1rem var(--light-icon);
+  --dark-box-shadow: inset -0.1rem -0.1rem 0.2rem 0.1rem var(--light),
+    inset 0.1rem 0.1rem 0.2rem 0.1rem var(--light);
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.6rem;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+.theme_toggle {
+  width: 11rem;
+  height: 5rem;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  padding: 1rem 0.7rem;
+  border-radius: 4rem;
+  gap: 1rem;
+  transition: var(--transition);
+  box-shadow: var(--light-box-shadow);
+  cursor: pointer;
+}
+.theme_icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light-icon);
+  color: var(--text-sunny);
+  transition: var(--transition);
+  z-index: 3;
+}
+.theme_icon ion-icon {
+  font-size: 2.5rem;
+}
+.theme_name {
+  color: var(--text-sunny);
+  font-family: 'Rubik', sans-serif;
+  transition: var(--transition);
+  animation: feadIn 0.8s ease-in-out forwards;
+  z-index: 1;
+}
+.theme_toggle.night {
+  background: var(--dark);
+  transition: var(--transition);
+  box-shadow: var(--dark-box-shadow);
+}
+.theme_icon.active {
+  background: var(--dark-icon);
+  transition: var(--transition);
+  transform: translateX(5.5rem) rotate(0deg);
+  color: var(--white);
+  box-shadow: 0 0 0.2rem var(--light-icon);
+}
+.theme_icon.active + .theme_name {
+  color: var(--white);
+  transform: translateX(-4.5rem);
+  transition: var(--transition);
+  animation: feadIn 0.8s ease-in-out forwards;
+}
+@keyframes feadIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.theme_icon.day ion-icon {
+  animation: sunny 0.6s ease-in-out forwards;
+}
+@keyframes sunny {
+  0% {
+    transform: scale(0.7) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(-257deg);
+  }
+}
+.theme_icon.active ion-icon {
+  animation: rotate 0.7s ease-in-out forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(257deg);
+  }
+}
