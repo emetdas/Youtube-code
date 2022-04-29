@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-text: #394452;
+  --secondory-text: #858C94;
+  --input-bg: #F9F9F9;
+  --input-text: #737373;
+  --btn-bg: #3525E6;
+  --overlay: rgba(16, 4, 25, 0.299);
+  --modal-bg: rgba(238, 236, 243, 0.962);
+  --white: #fff;
+  --transition: all 0.5s ease-in-out;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-open-modal {
+  background: var(--btn-bg);
+  color: var(--white);
+  padding: 0.7rem 1.7rem;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 4rem 0;
+  width: 100%;
+  height: 100%;
+  max-height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  clip-path: circle(0% at 50% 50%);
+  z-index: 33;
+  overflow: auto;
+  background: var(--overlay);
+  backdrop-filter: blur(1rem);
+  transition: var(--transition);
+}
+
+.modal-container.active {
+  opacity: 1;
+  visibility: visible;
+  clip-path: polygon(30% 0%, 70% 0, 100% 0, 100% 100%, 70% 100%, 30% 100%, 0 100%, 0 0);
+  transition: var(--transition);
+}
+
+.modal-inner {
+  position: relative;
+  width: 100rem;
+  max-width: 90%;
+  z-index: 100;
+  display: grid;
+  padding: 3rem;
+  border-radius: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  align-items: center;
+  background: var(--modal-bg);
+}
+
+.btn-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn-close ion-icon {
+  font-size: 2.5rem;
+}
+
+.modal-image .modal-img {
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  font-size: 5.5rem;
+  color: var(--primary-text);
+}
+
+.text-light {
+  color: var(--secondory-text);
+}
+
+.input-container {
+  background: var(--input-bg);
+  display: flex;
+  margin-top: 1rem;
+  border-radius: 1.2rem;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 0.3rem 1rem;
+  background: var(--input-bg);
+  border-radius: 1.2rem;
+}
+
+input::placeholder {
+  color: var(--primary-text);
+}
+
+.input-container .btn {
+  padding: 1.3rem 2rem;
+  background: var(--btn-bg);
+  color: var(--white);
+  border-radius: 0 1.2rem 1.2rem 2rem;
+  cursor: pointer;
+}
+
+@media (max-width:768px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .modal-inner {
+    margin-top: 15rem;
+  }
+}
