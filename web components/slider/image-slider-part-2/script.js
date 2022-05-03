@@ -48,6 +48,10 @@ next.addEventListener('click', () => {
     setTimeout(() => {
       index = 0;
       slider.style.transform = `translate(0px)`;
+      dots.forEach((dot) => {
+        dot.classList.remove('active');
+      });
+      dots[index].classList.add('active');
       slideTransition();
     }, 300);
   } else {
