@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --container: 120rem;
+  --m-auto: 0 auto;
+  --white: #fff;
+  --bg: rgb(238, 238, 241);
+  --arrow-bg: rgb(254, 254, 254);
+  --dot: rgb(206, 206, 206);
+  --dot-active: rgb(135, 89, 214);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  font-size: 1.6rem;
+}
+
+.hero-slider {
+  max-width: var(--container);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 51rem;
+  position: relative;
+  margin: 3rem auto;
+}
+
+@media (max-width:768px) {
+  .hero-slider {
+    height: calc(100vh - 2rem);
+    margin: 1rem 0;
+  }
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.5rem;
+  height: 3.5rem;
+  background: var(--arrow-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.arrow ion-icon {
+  font-size: 2.5rem;
+}
+
+.prev {
+  left: 2rem;
+}
+
+.next {
+  right: 2rem;
+}
+
+.slider-container {
+  max-width: var(--container);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 100%;
+}
+
+.slide {
+  width: calc(100% + 2rem);
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-controler {
+  margin-top: 1rem;
+}
+
+.slider-controler .dot {
+  display: inline-block;
+  text-decoration: none;
+  width: 1rem;
+  height: 1rem;
+  background: var(--dot);
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 2.7rem;
+  background: var(--dot-active);
+  transition: all 0.5s ease-in-out;
+}
