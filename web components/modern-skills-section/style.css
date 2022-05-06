@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #1E1D3C;
+  --transition: stroke-dashoffset 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  --white: #ffffff;
+  --circle-bg: rgba(43, 26, 106, 0.218);
+  --section-after: #6A38F1;
+  --box: #6352d3;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: var(--bg);
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+  padding: 0 1rem;
+}
+
+#skills {
+  padding: 4rem 0;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.section-heading {
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--white);
+  font-size: 4rem;
+  position: relative;
+}
+
+.section-heading::after,
+.section-heading::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0.3rem;
+}
+
+.section-heading::after {
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--section-after);
+  border: 0.3rem solid var(--bg);
+  bottom: -0.4rem;
+}
+
+.section-heading::before {
+  width: 15rem;
+  height: 0.4rem;
+  background: var(--white);
+  border-radius: 1rem;
+}
+
+.progress_container {
+  padding: 5rem 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  font-size: 2.5rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.progress_container .box {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box:first-child {
+  padding: 3rem 1rem;
+  background: var(--box);
+}
+
+.box img {
+  width: 12rem;
+}
+
+.item-heading {
+  font-size: 2.5rem;
+}
+
+.skill {
+  position: relative;
+}
+
+svg {
+  width: 20rem;
+  height: 20rem;
+  transform: rotate(278deg);
+  transform-origin: center;
+}
+
+circle {
+  stroke-width: 1.5rem;
+  fill: none;
+  transition: all 0.5s ease;
+}
+
+circle:nth-child(1) {
+  stroke: var(--circle-bg);
+  filter: drop-shadow(0 0 0.001rem var(--white));
+}
+
+.progress {
+  stroke: var(--stroke);
+  position: relative;
+  z-index: 1;
+  transition: var(--transition);
+  stroke-dasharray: var(--stroke-dasharray);
+  stroke-dashoffset: var(--stroke-dasharray);
+  animation: progress var(--animation-time) ease-in forwards;
+  --webkit-stroke-position: inside;
+  stroke-linecap: round;
+}
+
+@keyframes progress {
+  to {
+    stroke-dashoffset: var(--stroke-dashoffset);
+  }
+}
+
+.skill .data-progress {
+  position: absolute;
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box strong {
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+}
