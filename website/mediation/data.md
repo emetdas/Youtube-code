@@ -1,4 +1,20 @@
-## Reset
+Medi.
+
+Home
+About
+Blog
+Contact
+
+Sign In
+Sign Up
+
+
+Stay Productive & Work Remotely
+
+The key to work-from-home success is to create an enviroment that allows you to focus on the tasks at hand. Whether you are working from home for the first time.
+
+Learn More
+# Reset
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto:wght@400;500;700&display=swap');
 *,
@@ -45,11 +61,5 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-.container {
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 0 1rem;
 }
 ```

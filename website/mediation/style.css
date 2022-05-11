@@ -28,6 +28,9 @@ body {
   font-size: 1.6rem;
 }
 
+
+/* scrollbar code */
+
 ::-webkit-scrollbar {
   width: 1.2rem;
 }
@@ -88,6 +91,7 @@ body {
 .nav_links .nav_link:active,
 .nav_links .nav_link:focus,
 .nav_link.active {
+  transition: all 0.5s ease-in-out;
   background: var(--primary);
   color: var(--white);
   font-weight: 700;
@@ -119,12 +123,12 @@ body {
 
 .cta_btn {
   display: inline-block;
-  margin-top: 1rem;
-  padding: 1rem 2.5rem;
-  border-radius: 0.6rem;
   background: var(--primary);
   color: var(--white);
+  padding: 1rem 2.5rem;
   font-weight: 700;
+  margin-top: 1rem;
+  border-radius: 0.6rem;
 }
 
 .hero_image {
@@ -147,8 +151,8 @@ body {
     font-size: 4rem;
     line-height: 4rem;
   }
-  .text-light {
-    font-size: 1.6rem;
+  .navigation {
+    justify-content: space-between;
   }
   .mobile_menu_icon {
     width: 3.5rem;
@@ -169,11 +173,11 @@ body {
   .mobile_menu_toggle::after {
     content: '';
     position: absolute;
-    background: var(--text-dark);
-    width: 100%;
-    height: 0.33rem;
     left: 0;
+    width: 100%;
+    height: 0.35rem;
     border-radius: inherit;
+    background: var(--text-dark);
     transition: all 0.5s ease-in-out;
   }
   .mobile_menu_toggle.active {
@@ -190,9 +194,6 @@ body {
   }
   .mobile_menu_toggle.active::after {
     transform: rotate(-45deg);
-  }
-  .navigation {
-    justify-content: space-between;
   }
   .nav_menu {
     position: absolute;
@@ -214,9 +215,9 @@ body {
   }
   .nav_menu.active {
     background: var(--white);
+    display: flex;
     visibility: visible;
     pointer-events: auto;
-    display: flex;
     clip-path: circle(100% at 50% 0);
     transition: all 0.5s ease-in-out;
   }
