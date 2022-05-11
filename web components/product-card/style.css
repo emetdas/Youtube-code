@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --white: #fff;
+  --bg: #16192C;
+  --time: #E4ECF7;
+  --text: #505780;
+  --btn: #4C6FFF;
+  --expiry: rgb(251, 90, 42);
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(14, 12, 48);
+}
+
+.product-card {
+  margin: 4rem 0;
+  background: var(--bg);
+  color: var(--white);
+  padding: 3rem 1.5rem;
+  display: flex;
+  gap: 1.4rem;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  box-shadow: 0 0 0.1rem var(--white);
+}
+
+.product-image {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.offer-time-container {
+  text-align: center;
+}
+
+.offer-time-container span {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.offer-time-container .time-expire {
+  color: var(--expiry);
+}
+
+.offer-time {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1.4rem;
+}
+
+.offer-time h3 {
+  background: var(--time);
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.3rem 0.4rem;
+  border-radius: 0.3rem;
+}
+
+.add-to-cart {
+  display: inline-block;
+  color: var(--white);
+  background: var(--btn);
+  padding: 1.2rem 2.5rem;
+  border-radius: 1.2rem;
+}
