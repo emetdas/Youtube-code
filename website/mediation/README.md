@@ -2,7 +2,7 @@
 
 ### [🔗 Visit Live Demo](https://cods-medi.netlify.app/)
 
-### [⏯ Watch On Youtube](https://youtu.be/rz_UyW94Jmw)
+### [⏯ Watch On Youtube](https://youtu.be/NXxGO3g8sNs)
 
 ![thumbnail](thumbnail.png)
 
