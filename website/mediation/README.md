@@ -1,4 +1,4 @@
-# Responsive Mediation Website Using HTML CSS & Javascript
+# Responsive Meditation Website Using HTML CSS & Javascript
 
 ### [🔗 Visit Live Demo](https://cods-medi.netlify.app/)
 
