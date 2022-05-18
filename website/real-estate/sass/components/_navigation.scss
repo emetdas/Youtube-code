@@ -1,0 +1,133 @@
+header {
+  background: $hero-bg;
+}
+
+.navigation {
+  height: $nav-height;
+  background: $hero-bg;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo img {
+  width: 10rem;
+  height: auto;
+}
+
+.nav_menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: $hero-bg;
+}
+
+.nav_list {
+  display: inline-block;
+  @include m(0 0.3rem);
+  & .nav_link {
+    @include p(0.7rem 2rem);
+    color: $text-dark;
+    font-weight: 600;
+    border-radius: 0.6rem;
+    transition: $transition;
+    &.active {
+      background: $primary;
+      color: $white;
+      font-weight: 600;
+    }
+  }
+}
+
+@include media(max, 980) {
+  .mobile_menu_icon {
+    width: 3.5rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .mobile_menu_toggle {
+    background: $text-dark;
+    width: 3.5rem;
+    height: 0.35rem;
+    position: relative;
+    border-radius: 0.35rem;
+    transition: $transition;
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      left: 0;
+      width: 100%;
+      height: 0.35rem;
+      background: $text-dark;
+      border-radius: inherit;
+      transition: $transition;
+    }
+    &::before {
+      transform: translateY(-0.9rem);
+    }
+    &::after {
+      transform: translateY(0.9rem);
+    }
+    &.active {
+      background: transparent;
+      &::before {
+        transform: rotate(45deg);
+      }
+      &::after {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .navigation {
+    justify-content: space-between;
+  }
+  .nav_menu {
+    position: absolute;
+    top: $nav-height;
+    left: 0;
+    width: 100%;
+    background: $hero-bg;
+    @include p(5rem 0);
+    flex-direction: column;
+    visibility: hidden;
+    pointer-events: none;
+    clip-path: circle(0% at 100% 0);
+    transition: $transition;
+    & .nav_list {
+      display: block;
+      text-align: center;
+      @include m(1.5rem 0);
+    }
+    &.active {
+      background: $hero-bg;
+      visibility: visible;
+      pointer-events: auto;
+      display: flex;
+      clip-path: circle(150% at 50% 0);
+      transition: $transition;
+    }
+  }
+}
+
+.sticky {
+  z-index: 1000;
+  background: $hero-bg;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 0.4rem $text-light;
+  animation: sticky 0.5s ease-in-out;
+}
+
+@keyframes sticky {
+  0% {
+    transform: translateY(-#{$nav-height});
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}

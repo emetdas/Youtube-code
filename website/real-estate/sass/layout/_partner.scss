@@ -1,0 +1,37 @@
+#partner {
+  @include p(4rem 0);
+  .partner-top {
+    @include p(4rem 0 7rem 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    & .text-light {
+      margin-top: 1rem;
+      color: #7d8589;
+    }
+  }
+  & .partner-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+    place-items: center;
+    place-content: center;
+    & div {
+      display: flex;
+      align-items: center;
+      @include p(0.8rem);
+      cursor: pointer;
+      border-radius: 0.3rem;
+      & img {
+        width: 13rem;
+        height: 3rem;
+        object-fit: contain;
+      }
+      &:hover {
+        transition: box-shadow 0.5s ease-in-out;
+        box-shadow: 0 0 0.6rem 0.01rem rgba($text-gray-light, 0.3);
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@mixin p($p) {
+  padding: $p;
+}
+
+@mixin m($m) {
+  margin: $m;
+}
+
+@mixin media($brakepoint, $size) {
+  @media (#{$brakepoint}-width:#{$size}px) {
+    @content;
+  }
+}

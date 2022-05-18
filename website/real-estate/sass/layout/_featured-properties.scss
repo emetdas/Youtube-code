@@ -1,0 +1,47 @@
+#featured-properties {
+  @include p(6rem 0);
+  background: $properties-bg;
+  & .featured-section-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  & .featured-section-bottom {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2.5rem;
+    & .featured-item {
+      background: $white;
+      border-radius: 0.9rem;
+      & .featured-img {
+        width: 100%;
+      }
+      & .content-wrapper {
+        @include p(1.5rem);
+        &.text-light {
+          @include p(1rem 0 0 0);
+        }
+        & .deatils-short {
+          padding-top: 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          gap: 1rem;
+          flex-wrap: wrap;
+          @include media(max, 563) {
+            gap: 1rem;
+          }
+          & div {
+            display: flex;
+            gap: 1rem;
+            & img {
+              width: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

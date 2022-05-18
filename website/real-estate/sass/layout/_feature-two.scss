@@ -1,0 +1,64 @@
+#feature-two {
+  @include p(6rem 0);
+  & .found-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    & .found-content {
+      & .section-heading {
+        position: relative;
+        &::before {
+          position: absolute;
+          content: '';
+          left: 0;
+          top: 0;
+          width: 4rem;
+          height: 0.4rem;
+          background: $text-dark;
+          border-radius: 0.4rem;
+        }
+      }
+    }
+    & div:nth-child(1) {
+      @include media(max, 648) {
+        @include m(0 auto);
+      }
+    }
+    & img {
+      width: 40rem;
+      @include media(max, 920) {
+        width: 100%;
+      }
+      @include media(max, 648) {
+        width: 30rem;
+      }
+    }
+  }
+  & .counter-container {
+    @include p(4rem 0 0 0);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    justify-items: center;
+    gap: 2rem;
+    & .counter {
+      text-align: center;
+      & .text-dark {
+        font-size: 6.4rem;
+        font-weight: 600;
+        @include media(max, 824) {
+          font-size: 4.5rem;
+        }
+        @include media(max, 627) {
+          font-size: 4rem;
+        }
+      }
+      & span {
+        color: #7b8087;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

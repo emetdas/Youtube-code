@@ -1,0 +1,31 @@
+#hows-it-work {
+  @include p(4rem 0);
+  & .container:nth-child(2) {
+    max-width: 80rem;
+  }
+  & .works-heading {
+    position: relative;
+    color: $text-dark;
+    font-size: 3.5rem;
+    &::before {
+      position: absolute;
+      content: '';
+      left: 50%;
+      transform: translateX(-50%);
+      width: 4rem;
+      height: 0.4rem;
+      background: $text-dark;
+      border-radius: 1.2rem;
+    }
+  }
+  & .seller-types {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    place-items: center;
+    gap: 2rem;
+    & .seller-type {
+      text-align: center;
+    }
+  }
+}

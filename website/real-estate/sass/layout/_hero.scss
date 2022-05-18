@@ -1,0 +1,51 @@
+#hero {
+  background: $hero-bg;
+  & .hero_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1rem;
+    align-items: center;
+    @include p(4rem 0 0 0);
+    & .hero_content {
+      & .hero-title {
+        color: $text-hero-title;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+      }
+      & .hero-heading {
+        font-size: 6.4rem;
+        line-height: 7.6rem;
+        margin-bottom: 1rem;
+        @include media(max, 893) {
+          font-size: 5.4rem;
+          line-height: 5.8rem;
+        }
+        @include media(max, 700) {
+          font-size: 4rem;
+          line-height: 4.6rem;
+        }
+      }
+      & .paragraph {
+        color: $text-light;
+        font-size: 1.8rem;
+      }
+    }
+    & .hero_image {
+      & img {
+        max-width: 55rem;
+        width: 100%;
+        height: auto;
+      }
+    }
+    @include media(max, 668) {
+      @include p(2rem 0);
+      gap: 2rem;
+      & .hero_content {
+        grid-row: 2;
+      }
+      & .hero_image {
+        grid-row: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "real-estate",
+  "description": "description",
+  "authors": "Your Name",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --no-source-map --watch sass/style.scss css/style.css",
+    "sass:min": "sass --no-source-map --watch sass/style.scss css/style.min.css --style compressed"
+  }
+}
