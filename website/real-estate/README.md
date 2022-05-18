@@ -1,4 +1,4 @@
-# Responsive Complete Real Estate Website Using HTML CSS & Javascript
+# Complete Responsive Real Estate Website Using HTML CSS & Javascript
 
 ### [🔗 Visit Live Demo](https://cods-besnik.netlify.app/)
 
