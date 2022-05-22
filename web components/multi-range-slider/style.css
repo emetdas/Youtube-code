@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg: #251c5a;
+  --range-thumb-bg: #efedfc;
+  --range-thumb-br: #8e7eeb;
+  --track-bg: #eeeeee;
+  --track-active-bg: #cec8f6;
+  --text: #efedfc;
+}
+
+body {
+  height: 100vh;
+  font-size: 1.6rem;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.wrapper {
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 3rem;
+  color: var(--text);
+}
+
+.multi-range-slider {
+  position: relative;
+  width: 100%;
+  height: 2rem;
+  display: block;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  background: transparent;
+  appearance: none;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  pointer-events: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"].hover.active::-webkit-slider-thumb {
+  background: var(--range-thumb-br);
+  border: 0.35rem solid var(--range-thumb-bg);
+  box-shadow: 0 0 2rem 0.5rem var(--range-thumb-br);
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  -webkit-appearance: none;
+  cursor: pointer;
+  border: 0 none;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--range-thumb-bg);
+  border: 0.35rem solid var(--range-thumb-br);
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-slider-thumb {
+  pointer-events: all;
+  cursor: pointer;
+  border: 0 none;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--range-thumb-bg);
+  border: 0.35rem solid var(--range-thumb-br);
+  border-radius: 50%;
+}
+
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+
+input[type="range"]::-ms-thumb {
+  pointer-events: all;
+  cursor: pointer;
+  border: 0 none;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--range-thumb-bg);
+  border: 0.35rem solid var(--range-thumb-br);
+  border-radius: 50%;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  top: 0.6rem;
+  z-index: 1;
+  height: 0.8rem;
+}
+
+.slider>.track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 5rem;
+  background-color: var(--track-bg);
+}
+
+.slider>.range {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  border-radius: 5rem;
+  background: var(--track-active-bg);
+}
+
+.price__wrapper {
+  width: 100%;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
