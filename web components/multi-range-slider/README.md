@@ -1,6 +1,6 @@
 ## Ecommerce Multi Range Slider Using HTML CSS & Javascript
 
-### [⏯ Watch On Youtube](https://youtu.be/pp1TFz7z_1k)
+### [⏯ Watch On Youtube](https://youtu.be/VpXm27L-2Bc)
 
 
 ![thumbnail](thumbnail.png)
