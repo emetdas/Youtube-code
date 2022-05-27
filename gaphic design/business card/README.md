@@ -1,6 +1,6 @@
 ## Professional business card design using Adobe Illustrator | Graphic Design
 
-### [⏯ Watch On Youtube](https://youtu.be/pp1TFz7z_1k)
+### [⏯ Watch On Youtube](https://youtu.be/6Mq-sJng3d8)
 
 ![thumbnail](thumbnail.png)
 
