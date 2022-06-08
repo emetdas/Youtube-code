@@ -102,10 +102,10 @@ header .container {
 }
 
 .hero_container {
-  padding: 3rem 0 0 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
   align-items: center;
+  padding: 3rem 0 0 0;
 }
 
 .hero_content {
@@ -169,18 +169,19 @@ header .container {
     left: 0;
     width: 100%;
     background: var(--bg);
-    opacity: 0;
-    visibility: hidden;
     pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
     transform: scale(0);
     transform-origin: top;
     transition: var(--transition);
   }
   .nav_menu.active_menu {
-    opacity: 1;
-    visibility: visible;
     pointer-events: all;
+    visibility: visible;
+    opacity: 1;
     transform: scale(1);
+    transition: var(--transition);
   }
   .nav_list {
     display: block;
