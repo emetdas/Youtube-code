@@ -57,7 +57,6 @@ header .container {
 .logo img {
   width: 10rem;
   height: 5rem;
-  object-fit: contain;
 }
 
 .navigation {
@@ -100,8 +99,8 @@ header .container {
 
 .nav_list.btn-action .nav_link:hover {
   border: 0.15rem solid var(--primary);
-  background: var(--primary);
   color: var(--white);
+  background: var(--primary);
 }
 
 .hero_container {
@@ -117,22 +116,6 @@ header .container {
 
 .hero_image img {
   width: 100%;
-}
-
-.img-wrapper {
-  position: relative;
-}
-
-.img-wrapper::before {
-  position: absolute;
-  content: '';
-  right: -17rem;
-  top: -17rem;
-  width: 100%;
-  height: 155%;
-  background: var(--hero-img-bg);
-  border-radius: 50%;
-  z-index: -1;
 }
 
 .hero_heading {
@@ -155,8 +138,8 @@ header .container {
 .input-container {
   background: var(--input-bg);
   display: inline-flex;
-  padding: 0.5rem;
   border-radius: 3rem;
+  padding: 0.5rem;
 }
 
 .input-container input {
@@ -166,10 +149,6 @@ header .container {
   background: transparent;
   padding-left: 1rem;
   font-size: 1.7rem;
-}
-
-.input-container input::placeholder {
-  color: var(--text-light);
 }
 
 .btn-primary {
@@ -192,7 +171,26 @@ header .container {
   color: var(--primary);
 }
 
-@media (max-width:890px) {
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper::before {
+  position: absolute;
+  content: '';
+  right: -17rem;
+  top: -17rem;
+  width: 100%;
+  height: 155%;
+  background: var(--hero-img-bg);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media (max-width:990px) {
+  .nav_list {
+    padding: 0;
+  }
   .nav_list.btn-action {
     margin-left: 0;
   }
@@ -202,7 +200,7 @@ header .container {
   }
 }
 
-@media (max-width:855px) {
+@media (max-width:885px) {
   .mobile_menu_toggle {
     display: block;
     cursor: pointer;
@@ -217,13 +215,13 @@ header .container {
     left: 0;
     width: 100%;
     background: var(--bg);
+    z-index: 100;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: scale(0);
     transform-origin: top;
     transition: var(--transition);
-    z-index: 100;
   }
   .nav_menu.active_menu {
     opacity: 1;

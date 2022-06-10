@@ -1,6 +1,5 @@
-let menu_toggle_icon = document.querySelector('.mobile_menu_toggle');
+let menu_icon_toggle = document.querySelector('.mobile_menu_toggle');
 let nav_menu = document.querySelector('.nav_menu');
-
-menu_toggle_icon.addEventListener('click', () => {
+menu_icon_toggle.addEventListener('click', () => {
   nav_menu.classList.toggle('active_menu');
 });
