@@ -1,2 +1,0 @@
-# Sass Reset
-
