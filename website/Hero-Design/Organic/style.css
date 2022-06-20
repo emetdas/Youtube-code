@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+:root {
+  --container: 144rem;
+  --m-auto: 0 auto;
+  --white: #fff;
+  --text-dark: #22242A;
+  --text-light: #7B7E86;
+  --btn-bg: rgb(240, 139, 24);
+  --slide-bg: linear-gradient(90deg, #FFEFBA 0%, #FFFFFF 100%);
+  --border: #E5E7EB;
+  --btn-border: #FFA751;
+  --scrollbar-bg: rgb(68, 75, 133);
+  --transition: all 0.5s ease-in-out;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-bg);
+  border-radius: 2rem;
+}
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 0.2rem solid var(--border);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7rem;
+  padding: 0 1rem;
+}
+
+.logo img {
+  width: 12rem;
+  object-fit: contain;
+}
+
+.nav_list {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.action-btns {
+  display: flex;
+  align-items: center;
+}
+
+.action-btn {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.mobile_menu_toggle_icon {
+  display: none;
+}
+
+.nav_list .nav_link {
+  font-size: 1.6rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.hilight-dot {
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  z-index: 1000;
+  border-radius: 50%;
+  background: var(--scrollbar-bg);
+  transition: var(--transition);
+}
+
+.action-btn ion-icon {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+}
+
+.slider-container {
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.arrow ion-icon {
+  font-size: 4.5rem;
+  --ionicon-stroke-width: 1.8rem;
+}
+
+.slider-prev {
+  left: 2rem;
+}
+
+.slider-next {
+  right: 2rem;
+}
+
+.slide {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 2rem 0;
+  background: var(--slide-bg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: center;
+}
+
+.slide .pl {
+  padding-left: 9rem;
+}
+
+.slide .slider-image img {
+  max-width: 50rem;
+  width: 100%;
+}
+
+.slider-heading {
+  font-size: 5.4rem;
+  color: var(--text-dark);
+}
+
+.paragraph {
+  color: var(--text-light);
+  padding-top: 3rem;
+  font-size: 1.8rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.6rem 2.5rem;
+  background: var(--btn-bg);
+  color: var(--white);
+  font-size: 2rem;
+  border-radius: 2.5rem;
+  text-transform: uppercase;
+  border: 0.2rem solid var(--btn-border);
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--btn-border);
+  transition: var(--transition);
+}
+
+@media (max-width:768px) {
+  .mobile_menu_toggle_icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .mobile_menu_toggle_icon ion-icon {
+    font-size: 3.5rem;
+    transition: var(--transition);
+  }
+  .nav_menu {
+    position: absolute;
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--white);
+    border-top: 0.2rem solid var(--border);
+    clip-path: circle(0% at 50% 0%);
+    transition: var(--transition);
+  }
+  .nav_menu.active {
+    clip-path: circle(200% at 50% 0%);
+    transition: var(--transition);
+  }
+  .nav_list {
+    display: block;
+    text-align: center;
+    padding: 2.2rem 0;
+  }
+  .slider-heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width:599.5px) {
+  .arrow {
+    top: 40%;
+    transform: translateY(-40%);
+  }
+  .slider-prev {
+    left: 0.5rem;
+  }
+  .slider-next {
+    right: 0.5rem;
+  }
+  .slide .slider-image {
+    text-align: center;
+    grid-row: 1;
+  }
+  .slide .slider-content {
+    padding: 2rem 1rem;
+  }
+}
