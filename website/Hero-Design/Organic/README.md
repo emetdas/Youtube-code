@@ -1,5 +1,5 @@
 
-## Responsive Fruit Delivery Website Using HTML CSS & Javascript
+## Responsive Food Delivery Website Using HTML CSS & Javascript
 
 ### [⏯ Watch On Youtube](https://youtu.be/aBXRQTDBPY0)
 
