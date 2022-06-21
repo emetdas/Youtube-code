@@ -14,8 +14,6 @@ mobile_menu_toggle_icon.addEventListener('click', () => {
   }
 });
 
-
-
 // Active Link
 let hilight = nav_links[0].getBoundingClientRect();
 let menu_rect = nav_menu.getBoundingClientRect();
