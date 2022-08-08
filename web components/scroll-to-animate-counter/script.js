@@ -18,6 +18,9 @@ let CounterObserver = new IntersectionObserver(
           counter.innerText = Math.ceil(initialNumber + incPerCount);
           setTimeout(UpdateCounter, 40);
         }
+        else {
+          counter.innerText = targetNumber;
+        }
       }
       UpdateCounter();
 
