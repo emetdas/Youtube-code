@@ -1,6 +1,6 @@
-## Responsive Features Section 01 Design Using HTML CSS & Javascript
+## Responsive Section Design Part 01 | HTML & CSS
 
-### [⏯ Watch On Youtube](https://youtu.be/aREkrq4N2g8)
+### [⏯ Watch On Youtube]()
 
 ![thumbnail](thumbnail.png)
 
