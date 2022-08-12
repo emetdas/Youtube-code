@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #444BD3;
+  --text-primary: #121127;
+  --text-secondary: rgba(18, 17, 39, 0.56);
+  --white: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  font-style: normal;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+#grow-container {
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-subheading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.section-heading {
+  font-size: 4rem;
+  line-height: 5rem;
+  padding: 2rem 0;
+}
+
+.action-btns {
+  padding: 3rem 0;
+}
+
+.btn {
+  display: inline-flex;
+  padding: 0.6rem 2rem;
+  color: var(--text-primary);
+  gap: 1rem;
+  border-radius: 2rem;
+  font-weight: 600;
+}
+
+.btn:last-child {
+  color: var(--primary);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.grow-content-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+}
+
+.grow-item {
+  padding: 3rem 0;
+}
+
+.item-heading {
+  color: var(--primary);
+  padding: 1rem 0;
+}
+
+.paragraph {
+  color: var(--text-primary);
+}
+
+.item-list {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.item-list span {
+  color: var(--text-secondary);
+}
+
+.grow-image-container {
+  position: relative;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  background: linear-gradient(0deg, rgba(71, 21, 66, 0.64), rgba(71, 21, 66, 0.64));
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.overlay-heading {
+  color: var(--white);
+  font-size: 2.4rem;
+}
+
+@media (max-width:768px) {
+  .grow-content-container {
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  }
+}
+
+@media (max-width:425px) {
+  .section-heading {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+  .section-subheading {
+    font-size: 2.5rem;
+  }
+  .overlay-heading {
+    font-size: 2rem;
+  }
+}
