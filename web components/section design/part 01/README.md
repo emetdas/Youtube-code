@@ -1,4 +1,4 @@
-## Responsive Section Design Part 01 | HTML & CSS
+## Responsive Section Design Part 01 | Using HTML & CSS
 
 ### [⏯ Watch On Youtube]()
 
