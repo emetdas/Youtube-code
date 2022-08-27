@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section id="signin">
+      <div class="container">
+        <div class="signin-container">
+          <div class="signin-form">
+            <a href="index.html" class="logo">
+              <img src="images/logo.svg" alt="Logo" class="logo-img" />
+            </a>
+            <div class="form-container">
+              <h1 class="heading">NFT Access</h1>
+              <p class="paragraph">
+                Please fill your detail to access your account.
+              </p>
+              <form class="signin_form">
+                <div class="input-form-container">
+                  <label for="email">Email</label>
+                  <div class="input-group">
+                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Enter Valid Email Id" required />
+                    <ion-icon name="close-circle-outline" class="email-clear"></ion-icon>
+                  </div>
+                </div>
+                <div class="input-form-container">
+                  <label for="password">Password</label>
+                  <div class="input-group">
+                    <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+                    <ion-icon name="eye-off-outline" class="password-toggle"></ion-icon>
+                  </div>
+                </div>
+                <div class="input-form-container d-flex">
+                  <div>
+                    <input type="checkbox" name="remember" id="remember" />
+                    <label for="remember">Remember me</label>
+                  </div>
+                  <a href="#!" class="link">Forgot Password?</a>
+                </div>
+                <div class="input-form-container">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+                <div class="input-form-container">
+                  <a href="#" class="btn btn-signup"><img src="images/google.svg" alt="Google"><span>Sign in with Google</span></a>
+                </div>
+                <div class="input-form-container">
+                  <p class="paragraph">
+                    Don’t have an account? <a href="#">Sign up</a>
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="signin-image">
+            <div class="img-container">
+              <img src="images/main-image.svg" alt="Main Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+
+</html>
