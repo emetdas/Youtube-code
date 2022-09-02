@@ -1,4 +1,4 @@
-## Responsive Post Card Using HTML5 & CSS3
+## Responsive Post Card Design Using HTML5 & CSS3
 
 [Watch On Youtube](https://youtu.be/ugz3eaDmRGU)
 
