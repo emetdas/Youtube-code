@@ -2,6 +2,6 @@
 
 [Watch On Youtube]()
 
-![thumbnail]()
+![thumbnail](thumbnail.png)
 
 ------------------------
