@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --bg: #ececf0;
+    --card-bg: #FBFBFB;
+    --black: #1E2021;
+    --white: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: var(--bg);
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.product-filter-btns {
+    padding: 3rem 0 2rem 0;
+    display: flex;
+    gap: 1.7rem;
+    flex-wrap: wrap;
+}
+
+.btn-filter {
+    display: inline-flex;
+    padding: 0.7rem 2rem;
+    border-radius: 2.7rem;
+    cursor: pointer;
+    border: 0.2rem solid var(--black);
+    color: var(--black);
+    font-weight: 500;
+    transition: all 0.5s ease-in;
+}
+
+.btn-filter.mixitup-control-active {
+    transition: all 0.5s ease-in;
+    background: var(--black);
+    color: var(--white);
+}
+
+.product-filter-items {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.mix {
+    background: var(--card-bg);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.item-top {
+    padding: 2rem 0 0.5rem 0;
+}
+
+.item-top img {
+    width: 100%;
+}
+
+.item-bottom {
+    padding: 2rem 2rem 1.5rem 2rem;
+}
+
+.item-heading {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.item-subheading {
+    font-size: 2.5rem;
+    color: rgb(97, 97, 97);
+    padding: 1rem 0 2rem 0;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.btn-cart {
+    display: inline-flex;
+    background: var(--black);
+    color: var(--white);
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.btn-cart ion-icon {
+    font-size: 2.5rem;
+    --ionicon-stroke-width: 32px;
+}
+
+.btn-cart:hover ion-icon {
+    animation: down 0.5s linear;
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(2rem);
+    }
+    100% {
+        transform: translateY(0rem);
+    }
+}
