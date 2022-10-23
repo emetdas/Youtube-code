@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --text: #060823;
+    --white: #fff;
+    --action-dot: #92939A;
+    --text-light: #84888F;
+    --status-bg: #F4F5FD;
+    --progress-1: #6BC0FF;
+    --progress-2: #6153E4;
+    --progress-3: #FF7C7A;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    background: #f5f5f6;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-naigation {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.status-naigation .status-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.status-naigation ion-icon {
+    font-size: 3.5rem;
+    color: var(--action-dot);
+    cursor: pointer;
+}
+
+.member-status-card {
+    width: 44rem;
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.profiles {
+    display: flex;
+    padding: 1rem 0 3rem 0;
+}
+
+.profile {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile img {
+    width: 4.5rem;
+    height: auto;
+    border: 0.2rem solid var(--white);
+    border-radius: 50%;
+}
+
+.profile:not(:first-child) {
+    margin-left: -1rem;
+}
+
+.more {
+    background: var(--text);
+    border-radius: 50%;
+    color: var(--white);
+    border: 0.2rem solid var(--white);
+    cursor: pointer;
+}
+
+.more span {
+    font-size: 1.7rem;
+}
+
+.members-progress-bar {
+    margin: 1.5rem 0 1rem 0;
+    width: 100%;
+    height: 0.6rem;
+    border-radius: 0.6rem;
+    background: var(--white);
+    position: relative;
+}
+
+.progress-1 {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background: var(--progress-1);
+    border-radius: inherit;
+    z-index: 3;
+}
+
+.progress-2 {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: var(--progress-2);
+    border-radius: inherit;
+    z-index: 2;
+}
+
+.progress-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: var(--progress-3);
+    border-radius: inherit;
+}
+
+.members-progress-status {
+    background: var(--status-bg);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.members-progress-count-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.progress-count-title {
+    color: var(--text-light);
+    position: relative;
+    margin: 2rem 0 1rem 2rem;
+    font-size: 1.7rem;
+}
+
+.progress-count-title::before {
+    position: absolute;
+    content: '';
+    left: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+
+.progress-count-1 .progress-count-title:before {
+    background: var(--progress-1);
+}
+
+.progress-count-2 .progress-count-title:before {
+    background: var(--progress-2);
+}
+
+.progress-count-3 .progress-count-title:before {
+    background: var(--progress-3);
+}
+
+.progress-count-1 .progress-count-number,
+.progress-count-2 .progress-count-number,
+.progress-count-3 .progress-count-number {
+    margin-left: 2rem;
+    font-size: 2.5rem;
+    color: var(--text);
+}
