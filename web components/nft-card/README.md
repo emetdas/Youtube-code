@@ -1,6 +1,6 @@
-## Members Status Representation Design Using HTML & CSS
+## NFT Card Design Using HTML & CSS
 
-[📽 Watch On Youtube](https://youtu.be/cG6YqM84EUI)
+[📽 Watch On Youtube]()
 
 ![thumbnail](thumbnail.png)
 
