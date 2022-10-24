@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --bg: #060632;
+    --white: #fff;
+    --text: #060823;
+    --text-light: #84888F;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    background: var(--bg);
+}
+
+.text-light {
+    color: var(--text-light);
+    font-size: 1.8rem;
+}
+
+.nft-card {
+    width: 27rem;
+    background: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.nft-img {
+    position: relative;
+}
+
+.nft-image {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.profile {
+    width: 4rem;
+}
+
+.btn-bid {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.6rem 1.4rem;
+    border-radius: 1.8rem;
+}
+
+.btn-bid img {
+    width: 2.5rem;
+}
+
+.nft-title {
+    padding: 2rem 0;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-price {
+    margin-top: 2rem;
+    background: var(--text);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+    border-radius: 1.6rem;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-left {
+    gap: 1rem;
+}
+
+.btn-left img {
+    width: 2rem;
+}
