@@ -1,0 +1,721 @@
+[{
+        "MatchNumber": 1,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-20 16:00:00Z",
+        "Location": "Al Bayt Stadium",
+        "HomeTeam": "Qatar",
+        "AwayTeam": "Ecuador",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/QAT.png",
+            "https://world-cup.codsfli.com/flag/ECU.png"
+        ],
+        "Group": "Group A",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 3,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-21 13:00:00Z",
+        "Location": "Khalifa International Stadium",
+        "HomeTeam": "England",
+        "AwayTeam": "Iran",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/ENG.png",
+            "https://world-cup.codsfli.com/flag/IRN.png"
+        ],
+        "Group": "Group B",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 2,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-21 16:00:00Z",
+        "Location": "Al Thumama Stadium",
+        "HomeTeam": "Senegal",
+        "AwayTeam": "Netherlands",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/SEN.png",
+            "https://world-cup.codsfli.com/flag/NED.png"
+        ],
+        "Group": "Group A",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 4,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-21 19:00:00Z",
+        "Location": "Ahmad Bin Ali Stadium",
+        "HomeTeam": "USA",
+        "AwayTeam": "Wales",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/USA.png",
+            "https://world-cup.codsfli.com/flag/WAL.png"
+        ],
+        "Group": "Group B",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 8,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-22 10:00:00Z",
+        "Location": "Lusail Stadium",
+        "HomeTeam": "Argentina",
+        "AwayTeam": "Saudi Arabia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/ARG.png",
+            "https://world-cup.codsfli.com/flag/KSA.png"
+        ],
+        "Group": "Group C",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 6,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-22 13:00:00Z",
+        "Location": "Education City Stadium",
+        "HomeTeam": "Denmark",
+        "AwayTeam": "Tunisia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/DEN.png",
+            "https://world-cup.codsfli.com/flag/TUN.png"
+        ],
+        "Group": "Group D",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 7,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-22 16:00:00Z",
+        "Location": "Stadium 974",
+        "HomeTeam": "Mexico",
+        "AwayTeam": "Poland",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/MEX.png",
+            "https://world-cup.codsfli.com/flag/POL.png"
+        ],
+        "Group": "Group C",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 5,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-22 19:00:00Z",
+        "Location": "Al Janoub Stadium",
+        "HomeTeam": "France",
+        "AwayTeam": "Australia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/FRA.png",
+            "https://world-cup.codsfli.com/flag/AUS.png"
+        ],
+        "Group": "Group D",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 12,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-23 10:00:00Z",
+        "Location": "Al Bayt Stadium",
+        "HomeTeam": "Morocco",
+        "AwayTeam": "Croatia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/MAR.png",
+            "https://world-cup.codsfli.com/flag/CRO.png"
+        ],
+        "Group": "Group F",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 11,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-23 13:00:00Z",
+        "Location": "Khalifa International Stadium",
+        "HomeTeam": "Germany",
+        "AwayTeam": "Japan",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/GER.png",
+            "https://world-cup.codsfli.com/flag/JPN.png"
+        ],
+        "Group": "Group E",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 10,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-23 16:00:00Z",
+        "Location": "Al Thumama Stadium",
+        "HomeTeam": "Spain",
+        "AwayTeam": "Costa Rica",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/ESP.png",
+            "https://world-cup.codsfli.com/flag/CRC.png"
+        ],
+        "Group": "Group E",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 9,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-23 19:00:00Z",
+        "Location": "Ahmad Bin Ali Stadium",
+        "HomeTeam": "Belgium",
+        "AwayTeam": "Canada",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/BEL.png",
+            "https://world-cup.codsfli.com/flag/CAN.png"
+        ],
+        "Group": "Group F",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 13,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-24 10:00:00Z",
+        "Location": "Al Janoub Stadium",
+        "HomeTeam": "Switzerland",
+        "AwayTeam": "Cameroon",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/SUI.png",
+            "https://world-cup.codsfli.com/flag/CMR.png"
+        ],
+        "Group": "Group G",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 14,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-24 13:00:00Z",
+        "Location": "Education City Stadium",
+        "HomeTeam": "Uruguay",
+        "AwayTeam": "Korea Republic",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/URU.png",
+            "https://world-cup.codsfli.com/flag/KOR.png"
+        ],
+        "Group": "Group H",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 15,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-24 16:00:00Z",
+        "Location": "Stadium 974",
+        "HomeTeam": "Portugal",
+        "AwayTeam": "Ghana",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/POR.png",
+            "https://world-cup.codsfli.com/flag/GHA.png"
+        ],
+        "Group": "Group H",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 16,
+        "RoundNumber": 1,
+        "DateUtc": "2022-11-24 19:00:00Z",
+        "Location": "Lusail Stadium",
+        "HomeTeam": "Brazil",
+        "AwayTeam": "Serbia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/BRA.png",
+            "https://world-cup.codsfli.com/flag/SRB.png"
+        ],
+        "Group": "Group G",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 17,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-25 10:00:00Z",
+        "Location": "Ahmad Bin Ali Stadium",
+        "HomeTeam": "Wales",
+        "AwayTeam": "Iran",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/WAL.png",
+            "https://world-cup.codsfli.com/flag/IRN.png"
+        ],
+        "Group": "Group B",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 18,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-25 13:00:00Z",
+        "Location": "Al Thumama Stadium",
+        "HomeTeam": "Qatar",
+        "AwayTeam": "Senegal",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/QAT.png",
+            "https://world-cup.codsfli.com/flag/SEN.png"
+        ],
+        "Group": "Group A",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 19,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-25 16:00:00Z",
+        "Location": "Khalifa International Stadium",
+        "HomeTeam": "Netherlands",
+        "AwayTeam": "Ecuador",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/NED.png",
+            "https://world-cup.codsfli.com/flag/ECU.png"
+        ],
+        "Group": "Group A",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 20,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-25 19:00:00Z",
+        "Location": "Al Bayt Stadium",
+        "HomeTeam": "England",
+        "AwayTeam": "USA",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/ENG.png",
+            "https://world-cup.codsfli.com/flag/USA.png"
+        ],
+        "Group": "Group B",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 21,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-26 10:00:00Z",
+        "Location": "Al Janoub Stadium",
+        "HomeTeam": "Tunisia",
+        "AwayTeam": "Australia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/TUN.png",
+            "https://world-cup.codsfli.com/flag/AUS.png"
+        ],
+        "Group": "Group D",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 22,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-26 13:00:00Z",
+        "Location": "Education City Stadium",
+        "HomeTeam": "Poland",
+        "AwayTeam": "Saudi Arabia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/POL.png",
+            "https://world-cup.codsfli.com/flag/KSA.png"
+        ],
+        "Group": "Group C",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 23,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-26 16:00:00Z",
+        "Location": "Stadium 974",
+        "HomeTeam": "France",
+        "AwayTeam": "Denmark",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/FRA.png",
+            "https://world-cup.codsfli.com/flag/DEN.png"
+        ],
+        "Group": "Group D",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 24,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-26 19:00:00Z",
+        "Location": "Lusail Stadium",
+        "HomeTeam": "Argentina",
+        "AwayTeam": "Mexico",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/ARG.png",
+            "https://world-cup.codsfli.com/flag/MEX.png"
+        ],
+        "Group": "Group C",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 25,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-27 10:00:00Z",
+        "Location": "Ahmad Bin Ali Stadium",
+        "HomeTeam": "Japan",
+        "AwayTeam": "Costa Rica",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/JPN.png",
+            "https://world-cup.codsfli.com/flag/CRC.png"
+        ],
+        "Group": "Group E",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 26,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-27 13:00:00Z",
+        "Location": "Al Thumama Stadium",
+        "HomeTeam": "Belgium",
+        "AwayTeam": "Morocco",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/BEL.png",
+            "https://world-cup.codsfli.com/flag/MAR.png"
+        ],
+        "Group": "Group F",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 27,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-27 16:00:00Z",
+        "Location": "Khalifa International Stadium",
+        "HomeTeam": "Croatia",
+        "AwayTeam": "Canada",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/CRO.png",
+            "https://world-cup.codsfli.com/flag/CAN.png"
+        ],
+        "Group": "Group F",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 28,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-27 19:00:00Z",
+        "Location": "Al Bayt Stadium",
+        "HomeTeam": "Spain",
+        "AwayTeam": "Germany",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/ESP.png",
+            "https://world-cup.codsfli.com/flag/GER.png"
+        ],
+        "Group": "Group E",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 29,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-28 10:00:00Z",
+        "Location": "Al Janoub Stadium",
+        "HomeTeam": "Cameroon",
+        "AwayTeam": "Serbia",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/CMR.png",
+            "https://world-cup.codsfli.com/flag/SRB.png"
+        ],
+        "Group": "Group G",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 30,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-28 13:00:00Z",
+        "Location": "Education City Stadium",
+        "HomeTeam": "Korea Republic",
+        "AwayTeam": "Ghana",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/KOR.png",
+            "https://world-cup.codsfli.com/flag/GHA.png"
+        ],
+        "Group": "Group H",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 31,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-28 16:00:00Z",
+        "Location": "Stadium 974",
+        "HomeTeam": "Brazil",
+        "AwayTeam": "Switzerland",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/BRA.png",
+            "https://world-cup.codsfli.com/flag/SUI.png"
+        ],
+        "Group": "Group G",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 32,
+        "RoundNumber": 2,
+        "DateUtc": "2022-11-28 19:00:00Z",
+        "Location": "Lusail Stadium",
+        "HomeTeam": "Portugal",
+        "AwayTeam": "Uruguay",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/POR.png",
+            "https://world-cup.codsfli.com/flag/URU.png"
+        ],
+        "Group": "Group H",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 35,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-29 15:00:00Z",
+        "Location": "Khalifa International Stadium",
+        "HomeTeam": "Ecuador",
+        "AwayTeam": "Senegal",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/ECU.png",
+            "https://world-cup.codsfli.com/flag/SEN.png"
+        ],
+        "Group": "Group A",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 36,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-29 15:00:00Z",
+        "Location": "Al Bayt Stadium",
+        "HomeTeam": "Netherlands",
+        "AwayTeam": "Qatar",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/NED.png",
+            "https://world-cup.codsfli.com/flag/QAT.png"
+        ],
+        "Group": "Group A",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 33,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-29 19:00:00Z",
+        "Location": "Ahmad Bin Ali Stadium",
+        "HomeTeam": "Wales",
+        "AwayTeam": "England",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/WAL.png",
+            "https://world-cup.codsfli.com/flag/ENG.png"
+        ],
+        "Group": "Group B",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 34,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-29 19:00:00Z",
+        "Location": "Al Thumama Stadium",
+        "HomeTeam": "Iran",
+        "AwayTeam": "USA",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/IRN.png",
+            "https://world-cup.codsfli.com/flag/USA.png"
+        ],
+        "Group": "Group B",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 37,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-30 15:00:00Z",
+        "Location": "Al Janoub Stadium",
+        "HomeTeam": "Australia",
+        "AwayTeam": "Denmark",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/AUS.png",
+            "https://world-cup.codsfli.com/flag/DEN.png"
+        ],
+        "Group": "Group D",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 38,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-30 15:00:00Z",
+        "Location": "Education City Stadium",
+        "HomeTeam": "Tunisia",
+        "AwayTeam": "France",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/TUN.png",
+            "https://world-cup.codsfli.com/flag/FRA.png"
+        ],
+        "Group": "Group D",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 39,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-30 19:00:00Z",
+        "Location": "Stadium 974",
+        "HomeTeam": "Poland",
+        "AwayTeam": "Argentina",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/POL.png",
+            "https://world-cup.codsfli.com/flag/ARG.png"
+        ],
+        "Group": "Group C",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 40,
+        "RoundNumber": 3,
+        "DateUtc": "2022-11-30 19:00:00Z",
+        "Location": "Lusail Stadium",
+        "HomeTeam": "Saudi Arabia",
+        "AwayTeam": "Mexico",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/KSA.png",
+            "https://world-cup.codsfli.com/flag/MEX.png"
+        ],
+        "Group": "Group C",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 41,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-01 15:00:00Z",
+        "Location": "Ahmad Bin Ali Stadium",
+        "HomeTeam": "Croatia",
+        "AwayTeam": "Belgium",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/CRO.png",
+            "https://world-cup.codsfli.com/flag/BEL.png"
+        ],
+        "Group": "Group F",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 42,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-01 15:00:00Z",
+        "Location": "Al Thumama Stadium",
+        "HomeTeam": "Canada",
+        "AwayTeam": "Morocco",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/CAN.png",
+            "https://world-cup.codsfli.com/flag/MAR.png"
+        ],
+        "Group": "Group F",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 43,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-01 19:00:00Z",
+        "Location": "Khalifa International Stadium",
+        "HomeTeam": "Japan",
+        "AwayTeam": "Spain",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/JPN.png",
+            "https://world-cup.codsfli.com/flag/ESP.png"
+        ],
+        "Group": "Group E",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 44,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-01 19:00:00Z",
+        "Location": "Al Bayt Stadium",
+        "HomeTeam": "Costa Rica",
+        "AwayTeam": "Germany",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/CRC.png",
+            "https://world-cup.codsfli.com/flag/GER.png"
+        ],
+        "Group": "Group E",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 45,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-02 15:00:00Z",
+        "Location": "Al Janoub Stadium",
+        "HomeTeam": "Ghana",
+        "AwayTeam": "Uruguay",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/GHA.png",
+            "https://world-cup.codsfli.com/flag/URU.png"
+        ],
+        "Group": "Group H",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 46,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-02 15:00:00Z",
+        "Location": "Education City Stadium",
+        "HomeTeam": "Korea Republic",
+        "AwayTeam": "Portugal",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/KOR.png",
+            "https://world-cup.codsfli.com/flag/POR.png"
+        ],
+        "Group": "Group H",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 47,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-02 19:00:00Z",
+        "Location": "Stadium 974",
+        "HomeTeam": "Serbia",
+        "AwayTeam": "Switzerland",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/SRB.png",
+            "https://world-cup.codsfli.com/flag/SUI.png"
+        ],
+        "Group": "Group G",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    },
+    {
+        "MatchNumber": 48,
+        "RoundNumber": 3,
+        "DateUtc": "2022-12-02 19:00:00Z",
+        "Location": "Lusail Stadium",
+        "HomeTeam": "Cameroon",
+        "AwayTeam": "Brazil",
+        "flag": [
+            "https://world-cup.codsfli.com/flag/CMR.png",
+            "https://world-cup.codsfli.com/flag/BRA.png"
+        ],
+        "Group": "Group G",
+        "HomeTeamScore": null,
+        "AwayTeamScore": null
+    }
+]
