@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --container: 144rem;
+    --m-auto: 0 auto;
+    --white: #fff;
+    --primary: #8a1538;
+    --secondary: #eeeee4;
+    --gr-1: rgba(138, 21, 56, 0.607);
+    --gr-2: rgba(138, 21, 56, 0.665);
+    --nav: rgba(225, 225, 225, 0.045);
+    --mobile-nav: #7d3e59;
+    --count-down-bg: rgba(238, 235, 235, 0.295);
+    --timer-before-bg: rgb(218, 201, 109);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: var(--container);
+    padding: 0 2rem;
+    margin: var(--m-auto);
+}
+
+#hero {
+    background: linear-gradient(var(--gr-1), var(--gr-2)), url(images/hero-image.png) no-repeat center center / cover;
+}
+
+.header {
+    background: var(--nav);
+    backdrop-filter: blur(10px);
+}
+
+.navigation {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo .logo-img {
+    width: 17rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu-icon .menu_icon {
+    font-size: 5rem;
+    color: var(--white);
+}
+
+.nav_list {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.nav_link {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.nav_link.active {
+    position: relative;
+}
+
+.nav_link.active::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: rotate(45deg) translateX(-50%);
+    bottom: -1.5rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: var(--secondary);
+}
+
+.btn-nav {
+    margin-left: 5rem;
+}
+
+.btn-outline,
+.btn-primary {
+    padding: 0.6rem 2rem;
+    border: 0.2rem solid var(--secondary);
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 3rem;
+    transition: all 0.5s ease-in;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-outline ion-icon,
+.btn-primary ion-icon {
+    font-size: 2.7rem;
+    --ionicon-stroke-width: 4.4rem;
+}
+
+.btn-outline:hover,
+.btn-primary:hover {
+    border-color: var(--secondary);
+    color: var(--primary);
+    background: var(--secondary);
+    transition: all 0.5s ease-in;
+}
+
+.hero-main-container {
+    padding: 5rem 0;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-img {
+    max-width: 45rem;
+}
+
+.section-heading {
+    font-size: 5rem;
+    line-height: 6rem;
+    color: var(--secondary);
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    color: var(--white);
+    margin: 3rem 0;
+}
+
+.worldcup-count-down {
+    max-width: 45rem;
+    margin: 5rem 0 0 0;
+    border-radius: 1rem;
+    background: var(--count-down-bg);
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.count {
+    position: relative;
+    text-align: center;
+}
+
+.count:not(:first-child)::before {
+    position: absolute;
+    content: '';
+    left: -1rem;
+    top: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    transform: rotate(45deg) translateY(-50%);
+    background: var(--timer-before-bg);
+}
+
+.count h3 {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.count .count-time {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--secondary);
+}
+
+.running {
+    grid-column: 1 / 3;
+    color: var(--secondary);
+}
+
+@media (max-width: 904px) {
+    .mobile-menu-icon {
+        display: block;
+    }
+    .nav_menu {
+        position: absolute;
+        visibility: hidden;
+        clip-path: circle(0% at 96% -20%);
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        padding: 6rem 0;
+        background: var(--mobile-nav);
+        z-index: -1;
+        transition: all 0.7s ease-in-out;
+    }
+    .nav_menu.active {
+        visibility: visible;
+        clip-path: circle(150% at 100% 100%);
+        transition: all 0.7s ease-in-out;
+    }
+    .nav_list {
+        display: block;
+        text-align: center;
+        margin: 2.5rem 0;
+    }
+    .hero-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 639px) {
+    .hero-image {
+        grid-row: 1;
+    }
+    .hero-img {
+        max-width: 30rem;
+    }
+}
