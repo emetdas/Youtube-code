@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    outline: none;
+}
+
+:root {
+    --form-bg: rgba(243, 243, 243, 0.359);
+    --text-heading: rgb(26, 4, 61);
+    --text-lable: rgb(2, 4, 40);
+    --input-br: #52586e;
+    --btn-bg: #564ad8;
+    --white: #fff;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    background: url(./images/bg.jpg) no-repeat center center / cover;
+}
+
+.form {
+    padding: 2rem;
+    max-width: 40rem;
+    min-width: 35rem;
+    margin: 3rem 0;
+    border-radius: 1rem;
+    background: var(--form-bg);
+    backdrop-filter: blur(1rem);
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--text-heading);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem 0;
+}
+
+.input-group label {
+    color: var(--text-lable);
+}
+
+.input-group input {
+    margin-top: 0.6rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border: 0.15rem solid var(--input-br);
+    border-radius: 0.5rem;
+}
+
+.submit-btn {
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    border: none;
+    outline: none;
+    background: var(--btn-bg);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: 2rem;
+}
