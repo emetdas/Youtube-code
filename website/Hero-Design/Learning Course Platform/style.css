@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+:root {
+    --nav-shadow: 0 0.5rem 4rem rgba(0, 0, 0, 0.05);
+    --primary: rgba(117, 79, 254, 0.8);
+    --secondary: #29baf9;
+    --text-dark: #121212;
+    --text-dark-light: #030303;
+    --text-light: #2f2f2f;
+    --white: #fff;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    max-width: 144rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+header {
+    box-shadow: var(--nav-shadow);
+}
+
+.navigation {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_left {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.nav_list {
+    display: inline-flex;
+    margin: 0 1rem;
+}
+
+.nav_link {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.nav_right {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-search {
+    width: 3rem;
+    height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--text-dark);
+    color: var(--white);
+}
+
+.btn-search ion-icon {
+    font-size: 2rem;
+    --ionicon-stroke-width: 4rem;
+}
+
+.btn-login {
+    background: var(--text-dark);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    font-weight: 500;
+}
+
+.mobile_menu_toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.menu_toggle_icon {
+    font-size: 4.5rem;
+}
+
+.hero-container {
+    padding: 10rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+    align-items: center;
+}
+
+.section-title {
+    color: var(--text-dark-light);
+    font-weight: 500;
+    display: inline-flex;
+    gap: 1rem;
+}
+
+.section-heading {
+    font-size: 5rem;
+    line-height: 6rem;
+    color: var(--text-dark);
+    font-weight: bold;
+    padding: 1.5rem 0;
+}
+
+.section-description {
+    color: var(--text-light);
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-flex;
+    background: var(--primary);
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.btn-none {
+    margin-left: 3rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--text-light);
+}
+
+.btn-none .play-icon {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--secondary);
+    color: var(--white);
+    outline-offset: 0.15rem;
+    outline: 0.15rem solid var(--secondary);
+}
+
+.btn-none .play-icon ion-icon {
+    font-size: 2rem;
+    --ionicon-stroke-width: 4rem;
+}
+
+.hero-image {
+    text-align: center;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+    .mobile_menu_toggle {
+        display: block;
+    }
+    .nav_menu {
+        position: absolute;
+        top: 7rem;
+        width: 50%;
+        background: #fff;
+        height: calc(100% - 7rem);
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        display: none;
+    }
+    .nav_menu::before {
+        position: absolute;
+        content: '';
+        right: 0;
+        bottom: 0;
+        left: 90%;
+        width: 100%;
+        height: 100%;
+        background: rgba(241, 241, 241, 0.383);
+        backdrop-filter: blur(1rem);
+    }
+    .nav_menu.active {
+        display: flex;
+    }
+    .hero-container {
+        gap: 3rem;
+    }
+    .section-heading {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    .hero-image {
+        grid-row: 1;
+    }
+}
