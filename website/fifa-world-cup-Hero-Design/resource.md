@@ -59,3 +59,47 @@ body {
   margin: var(--m-auto);
 }
 ```
+
+## part 2
+
+API:
+https://world-cup.codsfli.com/points.php
+
+## table Boilerplate
+
+```html
+<div class="points-table">
+  <h1 class="group-heading">Group A</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Team</th>
+        <th>MP</th>
+        <th>L</th>
+        <th>D</th>
+        <th>W</th>
+        <th>Pts</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="d-a">
+            <img
+              src="https://world-cup.codsfli.com/flag/QAT.png"
+              alt="Qatar"
+              class="team-flag"
+            />
+            <span>QAT </span>
+          </div>
+        </td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
