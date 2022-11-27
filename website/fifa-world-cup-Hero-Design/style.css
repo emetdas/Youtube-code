@@ -243,3 +243,85 @@ body {
         max-width: 30rem;
     }
 }
+
+.standings-heading {
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+.loader {
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.points-container {
+    padding: 3rem 0 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.points-table {
+    box-shadow: 0 0 0.5rem 0.2rem var(--secondary);
+    border-radius: 0.5rem;
+}
+
+.group-heading {
+    padding: 0.5rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--secondary);
+    background: #7f1533;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.points-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.points-table table thead tr {
+    text-align: left;
+    background: #500f21;
+}
+
+.points-table table thead tr th {
+    padding: 1rem;
+    color: var(--secondary);
+}
+
+.points-table table tbody tr:not(:last-child) {
+    border-bottom: 0.02rem solid rgba(118, 114, 115, 0.447);
+}
+
+.points-table table tbody tr:nth-child(1),
+.points-table table tbody tr:nth-child(2) {
+    background: #e1e7f1;
+    font-weight: bold;
+}
+
+.points-table table tbody tr td {
+    padding: 0.7rem 0;
+    text-align: center;
+}
+
+.team-flag {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center;
+    box-shadow: 0 0 0.5rem rgb(143, 112, 112);
+}
+
+.d-a {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
