@@ -7,6 +7,6 @@
 ### [⏯ Part 02 Watch On Youtube]()
 
 ![thumbnail](thumbnail.png)
-![thumbnail](thumbnail1.png)
+![thumbnail](thumbnail01.png)
 
 ---
