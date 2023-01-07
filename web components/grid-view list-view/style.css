@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container: 144rem;
+    --m-auto: 0 auto;
+    --text-primary: #212b36;
+    --text-secondary: #637381;
+    --star: #ffa645;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: var(--container);
+    margin: var(--m-auto);
+    padding: 0 1rem;
+}
+
+#products {
+    padding: 2rem 0;
+}
+
+.btn-controls {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    margin-right: 1rem;
+}
+
+.btn ion-icon {
+    font-size: 3rem;
+}
+
+.btn.active ion-icon {
+    color: var(--star);
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.list-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.product img {
+    width: 100%;
+}
+
+.list-view .product {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.list-view .product img {
+    width: 10rem;
+    object-fit: cover;
+}
+
+.product-details {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-heading {
+    font-size: 2rem;
+    padding: 0 0 0.5rem 0;
+    color: var(--text-primary);
+}
+
+.review {
+    display: inline-flex;
+    gap: 1rem;
+    color: var(--text-secondary);
+}
+
+.product-details ion-icon {
+    color: var(--star);
+}
+
+@media (max-width: 768px) {
+    .grid-view {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+    .list-view {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

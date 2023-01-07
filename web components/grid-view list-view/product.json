@@ -1,0 +1,39 @@
+{
+    "products": [{
+            "image": "images/product-1.jpg",
+            "title": "Leather Court Shoes",
+            "price": "$39.00",
+            "reviews": "14 reviews"
+        },
+        {
+            "image": "images/product-2.jpg",
+            "title": "Black Shoes For Men",
+            "price": "$49.88",
+            "reviews": "45 reviews"
+        },
+        {
+            "image": "images/product-3.jpg",
+            "title": "Men’s Sports Shoes",
+            "price": "$55.89",
+            "reviews": "52 reviews"
+        },
+        {
+            "image": "images/product-4.jpg",
+            "title": "Women’s Nike Shoes",
+            "price": "$58.00",
+            "reviews": "15 reviews"
+        },
+        {
+            "image": "images/product-5.jpg",
+            "title": "Converse For Men",
+            "price": "$159.00",
+            "reviews": "85 reviews"
+        },
+        {
+            "image": "images/product-6.jpg",
+            "title": "Men’s Nike Shoes",
+            "price": "$248.00",
+            "reviews": "75 reviews"
+        }
+    ]
+}
