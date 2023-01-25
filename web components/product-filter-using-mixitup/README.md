@@ -1,6 +1,6 @@
 ## Product Filter Using Mixitup
 
-[Watch On Youtube]()
+[⏯ Watch On Youtube](https://youtu.be/HILrAlBP7zs)
 
 ![thumbnail](thumbnail.png)
 
