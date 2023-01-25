@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-codsfli | E-commerce</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section id="product">
+        <div class="container">
+            <div class="controls">
+                <button type="button" class="control" data-filter="all">ALL</button>
+                <button type="button" class="control" data-filter=".air-force">
+            Nike Air Force 1'07
+          </button>
+                <button type="button" class="control" data-filter=".pegasus">
+            Nike Pegasus 39
+          </button>
+                <button type="button" class="control" data-filter=".tempo">
+            Nike Tempo
+          </button>
+            </div>
+            <div class="products">
+                <div class="mix air-force">
+                    <img src="images/shoe-1.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix pegasus">
+                    <img src="images/shoe-3.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix air-force">
+                    <img src="images/shoe-2.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix tempo">
+                    <img src="images/shoe-5.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix tempo">
+                    <img src="images/shoe-7.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix pegasus">
+                    <img src="images/shoe-4.jpeg" alt="Shoe" />
+                </div>
+                <div class="mix tempo">
+                    <img src="images/shoe-6.jpeg" alt="Shoe" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="mixitup.min.js"></script>
+    <script>
+        var products = document.querySelector('.products');
+        var mixer = mixitup(products);
+    </script>
+</body>
+
+</html>

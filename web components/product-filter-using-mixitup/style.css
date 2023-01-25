@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@600&display=swap');
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container: 144rem;
+    --m-auto: 0 auto;
+    --white: #fff;
+    --btn: rgb(102, 65, 224);
+    --btn-active: rgb(67, 37, 168);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    max-width: var(--container);
+    margin: var(--m-auto);
+    padding: 0 2rem;
+}
+
+#product {
+    padding: 3rem 0;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.control {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    margin: 1rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--btn);
+    cursor: pointer;
+}
+
+.control.mixitup-control-active {
+    background: var(--btn-active);
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.mix {
+    max-width: 37rem;
+}
+
+.mix img {
+    width: 100%;
+}
