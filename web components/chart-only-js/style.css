@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container: 112rem;
+    --m-auto: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: var(--container);
+    margin: var(--m-auto);
+    padding: 0 2rem;
+}
+
+.heading {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#chart {
+    width: 550px;
+    height: 300px;
+    border-bottom: 0.1rem solid black;
+    border-left: 0.1rem solid black;
+    margin-top: 50px;
+    color: rgb(29, 21, 48);
+}
