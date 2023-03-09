@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 144rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  width: 15rem;
+  object-fit: contain;
+  aspect-ratio: 2/1.5;
+  filter: grayscale(100);
+  transition: filter 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+}
+
+.item img:hover {
+  filter: grayscale(0);
+  transition: filter 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
