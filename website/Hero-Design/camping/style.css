@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --container: 144rem;
+  --m-auto: 0 auto;
+  --primary: #f4f0ea;
+  --btn: #ff6524;
+  --tooltip: #ea3223;
+  --text-dark: #000;
+  --text-light: #7d7d7d;
+  --border: rgba(196, 196, 196, 0.4);
+}
+
+@font-face {
+  font-family: 'Gilroy-Heavy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gilroy-Heavy'), url('webfont/Gilroy-Heavy.woff') format('woff');
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  background: var(--primary);
+}
+
+.container {
+  max-width: var(--container);
+  margin: var(--m-auto);
+}
+
+.section-heading {
+  font-family: 'Gilroy-Heavy';
+  font-size: clamp(3rem, 5vw, 6rem);
+  line-height: clamp(4.2rem, 6vw, 7.8rem);
+  color: var(--text-dark);
+}
+
+.px-2 {
+  padding: 0 2rem;
+}
+
+.paragraph {
+  font-size: 2rem;
+  line-height: 3.6rem;
+  padding: 2rem 0;
+  color: var(--text-dark);
+}
+
+header {
+  border-bottom: 0.1rem solid var(--border);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 1.2rem 2rem;
+  border-left: 0.1rem solid var(--border);
+  border-right: 0.1rem solid var(--border);
+}
+
+.menu_toggle_btn {
+  display: none;
+  cursor: pointer;
+}
+
+.nav_menu {
+  display: flex;
+}
+
+.nav_list {
+  display: inline-flex;
+  padding: 2rem;
+  position: relative;
+}
+
+.nav_link {
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.nav_list:first-child .nav_link {
+  color: var(--text-dark);
+}
+
+.nav_list:first-child ::after {
+  content: '';
+  position: absolute;
+  bottom: -0.65rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url('images/link-after.svg') no-repeat bottom/contain;
+}
+
+.nav_action_btns {
+  display: flex;
+}
+
+.action-btn {
+  padding: 2rem;
+  border-left: 0.1rem solid var(--border);
+}
+
+.action-btn:last-child {
+  border-right: 0.1rem solid var(--border);
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip span {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.7rem;
+  background: var(--tooltip);
+  color: var(--primary);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  padding: 4rem 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/10;
+  background: url('images/bg.svg') no-repeat bottom/contain;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  align-items: center;
+}
+
+.btns {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.btn-primary {
+  background: var(--btn);
+  padding: 1rem 2rem;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+.btn-secondary {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 2rem;
+  background: var(--text-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Navigation */
+
+@media only screen and (max-width: 850px) {
+  .navigation {
+    zoom: 0.8;
+  }
+  .nav_menu {
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 0.1rem solid var(--border);
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    zoom: 1.2rem;
+    clip-path: circle(0 at 50% 0);
+    transition: clip-path 0.5s ease;
+  }
+  .nav_list {
+    padding: 1.2rem 0;
+    display: block;
+  }
+  .nav_menu.active {
+    clip-path: circle(110% at 50% 0);
+    transition: clip-path 0.5s ease;
+  }
+  .menu_toggle_btn {
+    display: block;
+  }
+  .menu_toggle_btn ion-icon {
+    font-size: 3.5rem;
+  }
+  .nav_action_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .action-btn {
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn-primary {
+    padding: 0.7rem 1.5rem;
+  }
+  .btn-secondary {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+  }
+}
