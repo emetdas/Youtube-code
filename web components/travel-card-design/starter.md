@@ -55,17 +55,4 @@ body {
   justify-content: center;
   background: rgb(18, 3, 62);
 }
-
-.heading {
-  color: var(--text-dark);
-  font-size: 1.8rem;
-  font-weight: 800;
-}
-
-.subheading,
-.card-footer {
-  color: var(--text-light);
-  font-weight: 500;
-  font-size: 1.6rem;
-}
 ```
