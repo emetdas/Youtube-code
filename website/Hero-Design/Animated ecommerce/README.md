@@ -1,4 +1,4 @@
-## Responsive E-commerce Website Design with Animation Using HTML CSS and Javascript & GSAP
+## Create Stunning E-commerce Websites with Dynamic Animation | HTML, CSS, JavaScript & GSAP
 
 ### [⏯ Watch On Youtube](https://youtu.be/zYSsXe1wTr4)
 
