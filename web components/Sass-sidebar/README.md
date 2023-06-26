@@ -2,6 +2,6 @@
 
 ### [⏯ Watch On Youtube](https://youtu.be/WM3PlCnqfrU)
 
-![thumbnail](thumbnail.png)
+![thumbnail](thumbnail.jpg)
 
 ---
