@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lobster', cursive;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  background: #f5f5f7;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero {
+  background: rgb(87, 76, 176);
+}
+
+#footer {
+  background: rgb(53, 44, 120);
+}
+
+.title {
+  font-size: 5rem;
+  color: transparent;
+  letter-spacing: 0.4rem;
+  -webkit-text-stroke-width: 0.01rem;
+  -webkit-text-stroke-color: #fff;
+}
+
+#home {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background: #f5f5f7;
+}
+
+canvas {
+  max-width: 100vw;
+  max-height: 100vh;
+}
