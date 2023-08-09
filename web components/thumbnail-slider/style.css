@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary-text: #394452;
+  --btn-bg: #5d63ff;
+  --overlay: rgba(16, 4, 25, 0.299);
+  --modal-bg: rgba(238, 236, 243, 0.962);
+  --white: #fff;
+  --transition: all 1s ease;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.main-image-container {
+  width: 40rem;
+  height: 40rem;
+  position: relative;
+}
+
+.main-image-container .img img {
+  width: 40rem;
+  height: 40rem;
+}
+
+.main-image-container .overlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: var(--overlay);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: circle(0% at 50% 50%);
+  transition: var(--transition);
+}
+
+.main-image-container:hover .overlay {
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+.overlay ion-icon {
+  font-size: 3.5rem;
+  color: var(--white);
+  background: var(--btn-bg);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 33;
+  overflow: auto;
+  background: var(--overlay);
+  backdrop-filter: blur(1rem);
+  transition: var(--transition);
+  clip-path: circle(0% at 50% 50%);
+}
+
+.modal-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.modal-container.active {
+  clip-path: circle(70.7% at 50% 50%);
+}
+
+.modal-inner {
+  position: relative;
+  width: 100%;
+  height: 70rem;
+  z-index: 100;
+  background: var(--modal-bg);
+}
+
+.btn-close {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 1000;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn-close ion-icon {
+  font-size: 2.5rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary-text);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 4rem !important;
+}
+
+.main {
+  padding: 6rem 0;
+}
+
+.main .swiper-slide {
+  text-align: center;
+}
+
+.main .swiper-slide img {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 2rem;
+}
+
+.thumbnail-slider,
+.thumbnail-slider .swiper-wrapper {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.thumbnail-slider .swiper-slide {
+  width: 10rem !important;
+  height: 10rem !important;
+  padding: 0.3rem;
+  border-radius: 2rem;
+  border: 0.2rem solid transparent;
+  transition: var(--transition);
+}
+
+.thumbnail-slider .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.thumbnail-slider {
+  width: 40rem;
+  cursor: pointer;
+}
+
+.swiper-slide-thumb-active {
+  border: 0.2rem solid rgb(165, 165, 165) !important;
+}
+
+@media (max-width: 521px) {
+  .main .swiper-slide img {
+    max-width: 40rem;
+    max-height: 40rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  .thumbnail-slider {
+    width: 100%;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 3.3rem !important;
+  }
+}
+
+@media (max-width: 415px) {
+  .main .swiper-slide img {
+    max-width: 35rem;
+    max-height: 35rem;
+  }
+  .main-image-container {
+    width: 90%;
+  }
+  .main-image-container .img {
+    text-align: center;
+  }
+  .main-image-container .img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 340px) {
+  .main-image-container .img img {
+    width: 90%;
+    object-fit: cover;
+  }
+}
