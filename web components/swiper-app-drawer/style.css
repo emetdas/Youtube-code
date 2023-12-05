@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(22, 0, 46);
+  color: #ffffff;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  min-width: 10rem;
+  width: 70%;
+  max-width: 32rem;
+  background-color: #201b45;
+  color: #fff;
+}
+
+.content {
+  width: 100%;
+}
+.nav_list {
+  margin: 3rem 0;
+}
+.nav_link {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav_link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2rem;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+.nav_link:hover::after {
+  background: rgb(122 99 237);
+  width: calc(100% + 2rem);
+}
+.menu-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+  background: #201b45;
+  border-radius: 0 0 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bar {
+  position: relative;
+  width: 3.5rem;
+  height: 0.3rem;
+  background: #fff;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before,
+.bar::after {
+  position: absolute;
+  content: "";
+  width: 3.5rem;
+  height: 0.3rem;
+  background: #fff;
+  border-radius: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+.bar::before {
+  transform: translateX(-1.7rem) translateY(-1rem);
+}
+.bar::after {
+  transform: translateX(-1.7rem) translateY(1rem);
+}
+.cross .bar {
+  background: transparent;
+  margin-right: 1rem;
+}
+.cross .bar::before {
+  transform: translateX(-1.3rem) rotate(45deg);
+}
+.cross .bar::after {
+  transform: translateX(-1.3rem) rotate(-45deg);
+}
